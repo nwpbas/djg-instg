@@ -26,8 +26,9 @@ router.register(r'posts', views.PostViewSet)
 router.register(r'comments', views.CommentViewSet)
 router.register(r'follows', views.FollowViewSet)
 router.register(r'likeposts', views.LikePostViewSet)
-router.register(r'likecomment', views.LikeCommentViewSet)
+router.register(r'likecomments', views.LikeCommentViewSet)
 router.register(r'users', views.UserViewSet)
+router.register(r'profiles', views.ProfileViewSet)
 
 urlpatterns = [
     path('api/', include(router.urls)),
