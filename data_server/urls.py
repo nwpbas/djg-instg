@@ -29,6 +29,8 @@ router.register(r'likeposts', views.LikePostViewSet)
 router.register(r'likecomments', views.LikeCommentViewSet)
 router.register(r'users', views.UserViewSet)
 router.register(r'profiles', views.ProfileViewSet)
+# for i in router.urls:
+#     print(i,i.__dict__)
 
 urlpatterns = [
     path('api/', include(router.urls)),
